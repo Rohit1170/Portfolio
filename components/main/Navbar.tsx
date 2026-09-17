@@ -14,6 +14,10 @@ const Navigationcontent=[{
   name:"About"
 },
 {
+  id:"experience",
+  name:"Experience"
+},
+{
   id:"3",
   name:"Projects"
 },

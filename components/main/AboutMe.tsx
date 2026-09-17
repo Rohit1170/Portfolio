@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { SparklesCore } from "../ui/Sparkles";
 
 import { motion } from "framer-motion";
@@ -38,21 +39,27 @@ const AboutMe = () => {
                 className=" opacity-80 my-8 text-white text-xl md:text-xl font-sans w-full overflow-x-hidden"
               >
                 {" "}
-               
-                Proactive full-stack developer skilled in data structures, algorithms, and PLM.<br/> Passionate about merging technology with business to drive innovation and deliver tangible results. With a solid background in software engineering, committed to excellence in every project undertaken. <br/>Eager to explore the intersection of tech and business, seeking impactful roles to leverage expertise and drive meaningful change in the dynamic tech landscape. Ready to take on challenges and deliver comprehensive solutions that make a difference in the industry.
+                Full-Stack Software Engineer with 2+ years across enterprise systems and independent product development.<br/> I solo-built and scaled SIPA Nutrition, a live D2C e-commerce platform, to 1,600+ users — owning everything from architecture to Razorpay payment integration to production maintenance. <br/>450+ DSA problems solved. Currently exploring remote and global full-stack roles.
               </motion.div>
             </div>
           </div>
         </div>
 
         <motion.div
-        
-          className="md:flex-grow h-1/2 lg:h-4/6 hidden md:block  bg-center bg-cover bg-no-repeat rounded-full "
-        >
-          <motion.img   whileInView={{x:0,opacity: 1}}
+          whileInView={{x:0,opacity: 1}}
           initial={{ opacity: 0,x:200 }}
-        
-          transition={{ delay: 0.4, duration: 0.6}}  className="h-10/12 w-10/12 rounded-full ml-20" src="/bgimage2.jpg"></motion.img>
+          transition={{ delay: 0.4, duration: 0.6}}
+          className="md:flex-grow relative h-1/2 lg:h-4/6 hidden md:block  bg-center bg-cover bg-no-repeat rounded-full "
+        >
+          <div className="relative h-10/12 w-10/12 rounded-full ml-20 aspect-square overflow-hidden">
+            <Image
+              src="/bgimage2.jpg"
+              alt="Rohit Raj"
+              fill
+              sizes="(max-width: 1024px) 40vw, 400px"
+              className="object-cover rounded-full"
+            />
+          </div>
         </motion.div>
       </div>
     </motion.div>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f2027"/>
+      <stop offset="50%" stop-color="#1a3c34"/>
+      <stop offset="100%" stop-color="#2c5f2d"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#9be15d"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <circle cx="680" cy="80" r="140" fill="#9be15d" opacity="0.08"/>
+  <circle cx="90" cy="440" r="110" fill="#9be15d" opacity="0.08"/>
+  <text x="400" y="250" font-family="Arial, Helvetica, sans-serif" font-size="54" font-weight="bold" fill="url(#text)" text-anchor="middle">SIPA Nutrition</text>
+  <text x="400" y="300" font-family="Arial, Helvetica, sans-serif" font-size="22" fill="#d7f5c8" text-anchor="middle">D2C E-commerce &amp; Nutrition Platform</text>
+</svg>

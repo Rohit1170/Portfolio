@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { PinContainer } from "./3d-pins";
 
 const PinCard = ({ title, bgurl }: { title: string; bgurl: string }) => {
@@ -12,7 +13,15 @@ const PinCard = ({ title, bgurl }: { title: string; bgurl: string }) => {
       className={classname}
       containerClassName={containername}
     >
-      <img src={bgurl} className=" w-full h-full rounded-lg hover:hidden"></img>
+      <div className="relative w-full h-full rounded-lg hover:hidden">
+        <Image
+          src={bgurl}
+          alt={title}
+          fill
+          sizes="(max-width: 768px) 240px, 320px"
+          className="object-cover rounded-lg"
+        />
+      </div>
     </PinContainer>
   );
 };
